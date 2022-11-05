@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="tr">
+    <meta name="author" content="ProgrammerYavuz">
+    <meta name="generator" content="Visual Studio Code">
+    <title>Circular Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link type="image/png" rel="icon" sizes="96x96" href="./favicon.png">
+</head>
+<body>
+    <!-- Pages -->
+    <div class="Sayfalar">
+        <div class="Sayfa" id="AnaSayfa"><a href="https://github.com/ProgrammerYavuz" target="_blank">ProgrammerYavuz</a></div>
+        <div class="Sayfa" id="Mesajlar">Mesajlar</div>
+        <div class="Sayfa" id="Sifreler">Şifreler</div>
+        <div class="Sayfa" id="Videolar">Videolar</div>
+        <div class="Sayfa" id="Oyunlar">Oyunlar</div>
+        <div class="Sayfa" id="Fotograflar">Fotoğraflar</div>
+        <div class="Sayfa" id="Ayarlar">Ayarlar</div>
+        <div class="Sayfa" id="Kullanicilar">Kullanıcılar</div>
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="toggle"><ion-icon name="add-outline" class="red"></ion-icon></div>
+        <li style="--i:0;">
+            <a href="#Ayarlar"><ion-icon name="settings-outline" class="red"></ion-icon></a>
+        </li>
+        <li style="--i:1;">
+            <a href="#Kullanicilar"><ion-icon name="person-outline" class="red"></ion-icon></a>
+        </li>
+        <li style="--i:2;">
+            <a href="#AnaSayfa"><ion-icon name="home-outline" class="red"></ion-icon></a>
+        </li>
+        <li style="--i:3;">
+            <a href="#Mesajlar"><ion-icon name="mail-outline" class="red"></ion-icon></a>
+        </li>
+        <li style="--i:4;">
+            <a href="#Sifreler"><ion-icon name="key-outline" class="red"></ion-icon></a>
+        </li>
+        <li style="--i:5;">
+            <a href="#Videolar"><ion-icon name="videocam-outline" class="red"></ion-icon></a>
+        </li>
+        <li style="--i:6;">
+            <a href="#Oyunlar"><ion-icon name="game-controller-outline" class="red"></ion-icon></a>
+        </li>
+        <li style="--i:7;">
+            <a href="#Fotograflar"><ion-icon name="camera-outline" class="red"></ion-icon></a>
+        </li>
+    </div>
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #29313b;
+}
+
+#AnaSayfa a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#AnaSayfa a:hover{
+    color: crimson;
+    transition: 0.5s;
+}
+
+.Sayfalar{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sayfalar .Sayfa{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.Sayfa:nth-child(odd){
+    background: #29313b;
+}
+.Sayfa:nth-child(even){
+    background: #4c5866;
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    bottom: 20px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.menu.aktif li{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.menu li a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu li a:hover{
+    color: crimson;
+}
+
+.toggle{
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+    cursor: pointer;
+    transition: transform 1.25s;
+}
+
+.menu.aktif .toggle{
+    transform: rotate(315deg);
+}
